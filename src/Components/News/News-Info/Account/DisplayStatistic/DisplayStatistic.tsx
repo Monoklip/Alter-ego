@@ -19,7 +19,6 @@ const DisplayStatistic = (props: { elem: { name: string; image: string; die: num
         setValue(event.target.value);
     };
 
-
     const getStatisticItem = async() => {
         await fetch(`http://localhost:3000/home/${id}`, {
             method: 'PUT',

@@ -1,0 +1,21 @@
+.elem-pages-url{
+    display: flex;
+
+    .elem-pages-url_item{
+        width: 70%;
+        padding: 20px;
+        box-sizing: border-box;
+
+        .elem-pages-url_item-image{
+            margin: 20px 0;
+            img{
+                width: 100%;
+            }
+        }
+
+        p{
+            font-family: system-ui;
+            font-weight: normal;
+        }
+    }
+}

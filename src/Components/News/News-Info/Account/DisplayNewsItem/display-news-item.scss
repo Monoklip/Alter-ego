@@ -1,0 +1,85 @@
+.display-news-item{
+    border-bottom: 1px solid #efa205;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    .display-news-item_title{
+
+        h1{
+        font-size: 16px;
+        color: white;
+        font-family: system-ui;
+        font-weight: normal;
+        cursor: pointer;
+
+            &:hover{
+                text-decoration: underline;
+                color: #efa205;
+            }
+        }
+    }
+
+    .display-news-item-renameBox{
+        width: 100%;
+        padding: 0 50px;
+        box-sizing: border-box;   
+        text-align: center;
+
+        p{
+            color: #efa205;
+            margin: 10px 0 5px 0;
+        }
+
+        input{
+            width: 100%;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        textarea{
+            width: 100%;
+            height: 200px;
+            padding:  10px;
+            box-sizing: border-box;
+        }
+
+        .display-news-item-renameBox-btns{
+            display: flex;
+            justify-content: space-evenly;
+
+            .btn_save{
+                width: 150px;
+                height: 25px;
+                margin-top: 10px;
+                background: rgb(15, 163, 15);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+    
+                &:hover{
+                    background: green;
+                }
+            }
+
+            .btn_cancel{
+                width: 150px;
+                height: 25px;
+                margin-top: 10px;
+                background: red;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+    
+                &:hover{
+                    background: brown;
+                }
+            }
+        }
+        
+    }
+    
+}

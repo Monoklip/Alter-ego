@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import NewsAll from '../News-All/NewsAll';
-import './war.scss';
-import WarItem from './WarItem/WarItem';
-import WarItemTitle from './WarItemTitle/WarItemTitle';
+import './elem.scss';
+import ElemItem from './ElemItem/ElemItem';
+import ElemItemTitle from './ElemItemTitle/ElemItemTitle';
 
 const War = () => {
 
@@ -21,14 +21,14 @@ const War = () => {
     
     return(
         <>
-            <div className='war'>
+            <div className='elem'>
                 <h1 style={{fontSize: `28px`}}>Війна в Україні 2023</h1>
                 {dataWar.slice(0,1).map((elem: {title: string; details: string; image: string; date: string; id: number; }) =>{
-                    return <WarItemTitle elem={elem} key={elem.id}/>
+                    return <ElemItemTitle elem={elem} key={elem.id} item={'war'}/>
                 })}
                 <h1>Останні новини агресії рф проти України ❯</h1>
                 {dataWar.slice(1).map((elem: {title: string; details: string; image: string; date: string; id: number; }) =>{
-                    return <WarItem elem={elem} key={elem.id}/>
+                    return <ElemItem elem={elem} key={elem.id} item={'war'}/>
                 })}
             </div>
             <NewsAll/>

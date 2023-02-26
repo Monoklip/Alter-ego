@@ -19,7 +19,7 @@ const NewsMenu = () => {
                 <li><Link to={'./politics'}>Політика</Link></li>
                 <li><Link to={'./economics'}>Економіка</Link></li>
                 <li><Link to={'./world'}>Світ</Link></li>
-                <li><Link to={'./'}>Спецпроекти</Link></li>
+                <li><Link to={'./ecology'}>Екологія</Link></li>
                 <li><Link to={'./sport'}>Спорт</Link></li>
                 <li><Link to={'./science'}>Наука</Link></li>
                 <li><Link to={'./techno'}>Техно і звязок</Link></li>
@@ -31,9 +31,6 @@ const NewsMenu = () => {
                 <li><Link to={'./curiosities'}>Курйози</Link></li>
                 <li><Link to={'./pogoda'}>Погода</Link></li>
             </ul>
-            <div className="news-menu-main">
-
-            </div>
         </div>
     )
 };
