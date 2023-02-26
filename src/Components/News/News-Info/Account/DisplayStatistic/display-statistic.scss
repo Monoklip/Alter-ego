@@ -1,0 +1,58 @@
+.display-statistic{
+    width: 95%;
+    border-radius: 10px;
+    border: 1px solid #ffaa00;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+
+    .display-statistic_count{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    h1{
+        font-family: system-ui;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    .display-statistic_btn{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+       
+        input{
+            width: 40%;
+            height: 20px;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+
+            &:focus{
+                outline-color: #efa205;
+            }
+        }
+
+        button{
+            width: 40%;
+            height: 20px;
+            border: none;
+            border-radius: 10px;
+            font-family:system-ui;
+            font-weight: 500;
+            cursor: pointer;
+
+            &:hover{
+                background: grey;
+                color: #efa205;
+            }
+        }
+    }
+}

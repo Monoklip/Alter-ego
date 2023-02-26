@@ -1,0 +1,45 @@
+.war_item {
+    width: 100%;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    border-radius: 3px;
+
+    .war_item-count{
+        display: flex;
+
+        .war_item-count_image{
+           width: 30%;
+           margin: 0;
+
+           img{
+            max-width: 60px;
+           }
+        }
+        .war_item-count_num{
+            width: 70%;
+            display: flex;
+            align-items: center;
+
+            h1{
+                margin: 0;
+            }
+            p{
+                margin-left: 8px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 24px;
+                color: #8eb53f;
+            }
+        }
+    }
+    .war_item-count_name{
+        font-family: cursive;
+        font-style: normal;
+        font-size: 12px;
+        margin-top: 4px;
+    }
+}

@@ -1,0 +1,21 @@
+.war-pages-url{
+    display: flex;
+
+    .war-pages-url_item{
+        width: 70%;
+        padding: 20px;
+        box-sizing: border-box;
+
+        .war-pages-url_item-image{
+            margin: 20px 0;
+            img{
+                width: 100%;
+            }
+        }
+
+        p{
+            font-family: system-ui;
+            font-weight: normal;
+        }
+    }
+}

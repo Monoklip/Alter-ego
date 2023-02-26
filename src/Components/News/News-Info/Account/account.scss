@@ -1,0 +1,114 @@
+.account {
+    width: 100%;
+    
+    .account-singIn {
+        width: 300px;
+        margin: 200px auto;
+        padding: 20px 50px;
+        box-sizing: border-box;
+        border: 1px solid #efa205;
+        border-radius: 10px;
+
+        h2 {
+            color: #efa205;
+            text-align: center;
+        }
+
+        p {
+            font-family: system-ui;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #25252c;
+        }
+
+        input {
+            width: 100%;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid #25252c;
+            padding: 10px;
+            color: #25252c;
+            box-sizing: border-box;
+            margin-top: 5px;
+
+            &:focus {
+                outline-color: #efa205;
+            }
+        }
+
+        .account-singIn_error {
+            height: 20px;
+            color: red;
+            font-size: 12px;
+            font-family: system-ui;
+        }
+
+        button {
+            width: 100%;
+            height: 25px;
+            background: rgb(1, 175, 1);
+            border: none;
+            color: white;
+            font-family: system-ui;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background: green;
+            }
+        }
+    }
+    .account-setting{
+        width: 100%;
+        background: url('https://www.unian.ua/build/assets/img/war-big2.png');
+        background-size: cover;
+
+        .account-setting-staristic{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            background-size: cover;
+        }
+        
+        .account-setting-btnAll{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            padding: 20px;
+            box-sizing: border-box;
+
+            button{
+                width: 90%;
+                height: 20px;
+                border-radius: 5px;
+                border: 1px solid #efa205;
+                background: url('https://www.unian.ua/build/assets/img/war-big2.png');
+                color: #efa205;
+                margin-bottom: 10px;
+                cursor: pointer;
+
+                &:hover{
+                    background: rgba(0, 0, 0, 0.8);
+                }
+            }
+        }
+
+        .account-setting-newsAll{
+            display: flex;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-top: 1px solid #25252c;
+
+            .account-setting-newsAll-delRenameNews{
+                width: 60%;
+
+                h2{
+                    text-align: center;
+                    color: #25252c;
+                }
+            }
+        }
+    }
+}

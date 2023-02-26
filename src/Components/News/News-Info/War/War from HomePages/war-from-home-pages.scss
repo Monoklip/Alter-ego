@@ -1,0 +1,19 @@
+.war-from-home-pages{
+    width: 32%;
+    margin: 0;
+
+    .war-from-home-pages_image{
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+    }
+    .war-from-home-pages_title {
+        font-size: 14px;
+        margin-top: 10px;
+        font-family: system-ui;
+        text-transform: none;
+    }
+    &:hover{
+        opacity: 0.8;
+    }
+}
