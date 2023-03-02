@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import War from './War/War';
 import Home from './Home/Home';
 import Society from './Society/Society';
-import { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import Account from './Account/Account';
 import Sport from './Sport/Sport';
 import ElemPagesUrl from './War/ElemPagesUrl/ElemPagesUrl';
@@ -20,8 +20,13 @@ import Health from './Health/Health';
 import Tourism from './Tourism/Tourism';
 import Curiosities from './Curiosities/Curiosities';
 import Pogoda from './Pogoda/Pogoda';
+import NoPages from './NoPages/NoPages';
 
-const NewsInfo = () =>{
+const NewsInfo = (props: { UnClickMenu: any }) => {
+
+    const {
+        UnClickMenu
+    } = props;
 
     const [dataWar, setDataWar] = useState([]);
     const [dataSociety, setDataSociety] = useState([]);
@@ -136,7 +141,7 @@ const NewsInfo = () =>{
         setDataPogoda(data.sort((a: any, b: any) =>  b.id - a.id ));
     };
 
-    useEffect(()=>{
+    const getNewsAll = () => {
         getWarPages();
         getSocietyPages();
         getSportPages();
@@ -153,29 +158,34 @@ const NewsInfo = () =>{
         getTourismPages();
         getCuriositiesPages();
         getPogodaPages();
+    };
+
+    useEffect(()=>{
+        getNewsAll();
     },[]);
 
     return(
-        <div className="news-info">
+        <div className="news-info" onClick={UnClickMenu}>
             <Routes>
                 <Route path='/' element={<Home 
-                                            dataWar={dataWar}
-                                            dataScience={dataScience}
-                                            dataSociety={dataSociety}
-                                            dataPolitics={dataPolitics}
-                                            dataEconomics={dataEconomics}
-                                            dataWorld={dataWorld}
-                                            dataEcology={dataEcology}
-                                            dataSport={dataSport}
-                                            dataTechno={dataTechno}
-                                            dataLite={dataLite}
-                                            dataGames={dataGames}
-                                            dataIncidents={dataIncidents}
-                                            dataHealth={dataHealth}
-                                            dataTourism={dataTourism}
-                                            dataCuriosities={dataCuriosities}
-                                            dataPogoda={dataPogoda}
-                                                />}></Route>
+                        dataWar={dataWar}
+                        dataScience={dataScience}
+                        dataSociety={dataSociety}
+                        dataPolitics={dataPolitics}
+                        dataEconomics={dataEconomics}
+                        dataWorld={dataWorld}
+                        dataEcology={dataEcology}
+                        dataSport={dataSport}
+                        dataTechno={dataTechno}
+                        dataLite={dataLite}
+                        dataGames={dataGames}
+                        dataIncidents={dataIncidents}
+                        dataHealth={dataHealth}
+                        dataTourism={dataTourism}
+                        dataCuriosities={dataCuriosities}
+                        dataPogoda={dataPogoda}
+                         />}>
+                </Route>
                 <Route path='/account' element={<Account/>}></Route>
                 <Route path='/war' element={<War/>}></Route>
                 <Route path='/society' element={<Society/>}></Route>
@@ -193,6 +203,7 @@ const NewsInfo = () =>{
                 <Route path='/tourism' element={<Tourism/>}></Route>
                 <Route path='/curiosities' element={<Curiosities/>}></Route>
                 <Route path='/pogoda' element={<Pogoda/>}></Route>
+                <Route path='*' element={<NoPages/>}></Route>
 
                 {dataWar.map((elem: {title: string; image: string; id: number; details: string; }) => {
                     return <Route path={`/war/${elem.title}/${elem.id}`} element={<ElemPagesUrl elem={elem} key={elem.id}/>}></Route>

@@ -11,13 +11,13 @@ const NewsAll = () => {
     const [colorArrow, setColorArrow] = useState('#efa205');
 
     const [dataNewsAll, setDataNewsAll] = useState([]);
-    const [url, setUrl] = useState<string>('http://localhost:3000/war');
+    const [url, setUrl] = useState<string>('http://localhost:3000/war');    
 
     const getNewsAll = async() => {
         const response = await fetch(url);
         const data = await response.json();
         setDataNewsAll(data);
-    };
+    };    
 
     useEffect(()=>{
         getNewsAll();

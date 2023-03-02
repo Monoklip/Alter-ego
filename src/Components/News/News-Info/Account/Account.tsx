@@ -258,6 +258,7 @@ const Account = () => {
                             return <DisplayStatistic elem={elem} getStatistic={getStatistic} key={elem.id} />
                         })}
                     </div>
+                    <button className='exitAccountBtn' onClick={exitAccount}>Вихід</button>
                     <div className="account-setting-btnAll">
                         <button onClick={getWarDisplay}>Війна</button>
                         <button onClick={getSocietyDisplay}>Україна</button>
@@ -456,7 +457,6 @@ const Account = () => {
                     </div>
                 </div>
             }
-            <button onClick={exitAccount}>del</button>
         </div>
     )
 };

@@ -20,7 +20,8 @@ const Home = (props: { dataWar: any
     dataHealth: any
     dataTourism: any
     dataCuriosities: any
-    dataPogoda: any }) => {
+    dataPogoda: any;
+   }) => {
 
     const { 
         dataWar,
@@ -38,7 +39,7 @@ const Home = (props: { dataWar: any
         dataHealth,
         dataTourism,
         dataCuriosities,
-        dataPogoda
+        dataPogoda,
     } = props;
 
     const [urlStatistic, setUrlStatistic] = useState<string>('http://localhost:3000/home');
@@ -62,6 +63,8 @@ const Home = (props: { dataWar: any
 
     return(
         <div className='home'>
+          {/* <div className="home-header">
+          </div> */}
             <div className="home-statistic">
                 <h1>Втрати ворога на {toDay}</h1>
                 <div className="home-statistic-war">
