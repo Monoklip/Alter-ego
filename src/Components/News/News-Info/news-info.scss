@@ -3,3 +3,9 @@
     display: flex;
     margin-left: 200px;
 }
+
+@media screen and (max-width: 1150px){
+    .news-info{
+        margin: 0;
+    }
+}
