@@ -1,7 +1,7 @@
-.society-item-title{
+.elem-item-title{
     width: 100%;
     height: 500px;
-    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     padding: 20px;
     box-sizing: border-box;
@@ -15,5 +15,9 @@
         line-height: 32px;
         bottom: 5px;
         font-family: system-ui;
+    }
+
+    &:hover{
+        opacity: 0.8;
     }
 }

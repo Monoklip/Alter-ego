@@ -13,6 +13,8 @@
         .war_item-count_image{
            width: 30%;
            margin: 0;
+           background-position: center;
+           background-size: cover;
 
            img{
             max-width: 60px;
@@ -41,5 +43,19 @@
         font-style: normal;
         font-size: 12px;
         margin-top: 4px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .war_item {
+        .war_item-count {
+            .war_item-count_image{
+                width: 50%;
+            }
+
+            .war_item-count_num{
+                width: 50%;
+            }
+        }
     }
 }

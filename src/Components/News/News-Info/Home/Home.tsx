@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import NewsAll from '../News-All/NewsAll';
-import ElemFromHomePages from '../War/Elem from HomePages/ElemFromHomePages';
+import ElemFromHomePages from '../ELEMENTS/Elem from HomePages/ElemFromHomePages';
 import './home.scss';
 import StatisticItem from './StatisticItem/StatisticItem';
 

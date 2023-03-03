@@ -35,3 +35,15 @@
         }
     }
 }
+
+@media screen and (max-width: 850px){
+    .new-news{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .new-news{
+        padding: 0 5px;
+    }
+}

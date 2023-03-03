@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import NewsAll from '../News-All/NewsAll';
-import './elem.scss';
-import ElemItem from './ElemItem/ElemItem';
-import ElemItemTitle from './ElemItemTitle/ElemItemTitle';
+import '../ELEMENTS/elem.scss';
+import ElemItem from '../ELEMENTS/ElemItem/ElemItem';
+import ElemItemTitle from '../ELEMENTS/ElemItemTitle/ElemItemTitle';
 
 const War = () => {
 

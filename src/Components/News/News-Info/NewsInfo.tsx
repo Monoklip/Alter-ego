@@ -6,7 +6,7 @@ import Society from './Society/Society';
 import  { useEffect, useState } from 'react';
 import Account from './Account/Account';
 import Sport from './Sport/Sport';
-import ElemPagesUrl from './War/ElemPagesUrl/ElemPagesUrl';
+import ElemPagesUrl from './ELEMENTS/ElemPagesUrl/ElemPagesUrl';
 import Economics from './Economics/Economics';
 import Politics from './Politics/Politics';
 import World from './World/World';

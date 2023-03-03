@@ -9,3 +9,9 @@
         margin: 0;
     }
 }
+
+@media screen and (max-width: 900px){
+    .news-info{
+        flex-direction: column-reverse;
+    }
+}

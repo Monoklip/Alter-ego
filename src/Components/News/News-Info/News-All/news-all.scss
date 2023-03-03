@@ -1,6 +1,7 @@
 .news-all{
     width: 350px;
     margin-top: 20px;
+    padding: 0 5px 0 0 ;
 
     .news-all-poslugi{
         display: flex;
@@ -99,5 +100,37 @@
                 opacity: 0.3;
             }
         }
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    .news-all{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 0;
+        
+        .news-all-poslugi{
+            justify-content: space-evenly;
+        }
+
+        .news-all-reklama{
+
+            .news-all-items{
+                display: none;
+            }
+
+            .news-all-reklama-box{
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px){
+
+    .news-all{
+        padding: 5px;
     }
 }

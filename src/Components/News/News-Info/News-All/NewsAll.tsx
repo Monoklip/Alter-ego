@@ -64,10 +64,12 @@ const NewsAll = () => {
                 <div className="news-all-reklama-box">
                     <p>Тут може бути ваша реклама</p>
                 </div>
-                <h1>Останні новини ❯</h1>
-                {dataNewsAll.sort((a: any, b: any) => { return b.id - a.id}).map((elem: {title: string; date: string; id: number;}) => {
-                    return <NewsAllItem elem={elem} key={elem.id}/>
-                })}
+                <div className="news-all-items">
+                    <h1>Останні новини ❯</h1>
+                    {dataNewsAll.sort((a: any, b: any) => { return b.id - a.id}).map((elem: {title: string; date: string; id: number;}) => {
+                        return <NewsAllItem elem={elem} key={elem.id}/>
+                    })}
+                </div>
             </div>
         </div>
     )
