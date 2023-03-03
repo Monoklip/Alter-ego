@@ -1,13 +1,13 @@
-.home{
+.home {
     width: 100%;
 
-    .home-statistic{
+    .home-statistic {
         background: url('https://www.unian.ua/build/assets/img/war-big2.png');
         padding: 16px 40px;
         box-sizing: border-box;
         background-size: cover;
 
-        h1{
+        h1 {
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
@@ -17,33 +17,34 @@
             text-transform: uppercase;
             color: #fff;
         }
-        .home-statistic-war{
+
+        .home-statistic-war {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         }
     }
 
-    .home-mainNews{
+    .home-mainNews {
         display: flex;
 
-        .home-mainNews-center{
+        .home-mainNews-center {
             width: 70%;
             padding: 20px;
             box-sizing: border-box;
-            
-            a{
+
+            a {
                 font-family: system-ui;
                 font-weight: normal;
                 text-transform: uppercase;
                 font-size: 22px;
                 color: black;
 
-                &:hover{
+                &:hover {
                     color: #efa205;
                 }
             }
 
-            .home-mainNews-center_item{
+            .home-mainNews-center_item {
                 display: flex;
                 justify-content: space-between;
                 margin: 10px 0 40px 0;
@@ -52,8 +53,97 @@
     }
 }
 
-@media screen and (max-width: 1150px){
-    .home .home-statistic{
+@media screen and (max-width: 1150px) {
+    .home .home-statistic {
         margin-top: 54px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .home {
+
+        .home-mainNews {
+            display: flex;
+            flex-direction: column-reverse;
+
+            .home-mainNews-center {
+                width: 100%;
+            }
+        }
+
+        .home-statistic {
+
+            .home-statistic-war {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .home {
+
+        .home-statistic {
+
+            .home-statistic-war {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+
+        .home-statistic {
+
+            .home-statistic-war {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .home-mainNews {
+            .home-mainNews-center {
+                .home-mainNews-center_item {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    .elem-from-home-pages{
+                        width: 90%;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .home {
+
+        .home-statistic {
+
+            .home-statistic-war {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .home-mainNews {
+            .home-mainNews-center {
+                .home-mainNews-center_item {
+                    display: block;
+                    grid-template-columns: 1fr;
+
+                    .elem-from-home-pages{
+                        width: 100%;
+
+                        .elem-from-home-pages_image {
+                            height: 250px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

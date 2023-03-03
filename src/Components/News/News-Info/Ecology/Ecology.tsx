@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import NewsAll from '../News-All/NewsAll';
-import ElemItem from '../War/ElemItem/ElemItem';
-import ElemItemTitle from '../War/ElemItemTitle/ElemItemTitle';
-import '../War/elem.scss';
+import ElemItem from '../ELEMENTS/ElemItem/ElemItem';
+import ElemItemTitle from '../ELEMENTS/ElemItemTitle/ElemItemTitle';
+import '../ELEMENTS/elem.scss';
+
 
 const Ecology = () => {
 

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import NewsAll from '../News-All/NewsAll';
-import ElemItem from '../War/ElemItem/ElemItem';
-import ElemItemTitle from '../War/ElemItemTitle/ElemItemTitle';
-import '../War/elem.scss';
+import ElemItem from '../ELEMENTS/ElemItem/ElemItem';
+import ElemItemTitle from '../ELEMENTS/ElemItemTitle/ElemItemTitle';
+import '../ELEMENTS/elem.scss';
 
 const Economics = () => {
 
@@ -22,7 +22,7 @@ const Economics = () => {
     return(
         <>
             <div className='elem'>
-                <h1 style={{fontSize: `28px`}}>СПОРТ</h1>
+                <h1 style={{fontSize: `28px`}}>Економіка</h1>
                 {dataEconomics.slice(0,1).map((elem: {title: string; details: string; image: string; date: string; id: number; }) =>{
                     return <ElemItemTitle elem={elem} key={elem.id} item={'economics'}/>
                 })}
