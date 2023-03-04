@@ -29,7 +29,7 @@ const NewNews = (props: { item: string; getData: any; }) => {
     };
 
     const newNews = async() => {
-        if(title.trim() != '' && details.trim() != '' && image.trim() != ''){
+        if(title.trim() !== '' && details.trim() !== '' && image.trim() !== ''){
             await fetch (`http://localhost:3000/${item}`, {
                 method: 'POST',
                 body: JSON.stringify({

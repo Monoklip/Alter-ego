@@ -7,14 +7,14 @@ const News = () => {
 
     const [clickLeftMenu, setClickLeftMenu] = useState<boolean>(false);
 
-    const UnClickMenu = () => {
+    const UnClickleftMenu = () => {
         setClickLeftMenu(false);
     };
     
     return(
         <div className="news">
-            <NewsMenu clickLeftMenu={clickLeftMenu} setClickLeftMenu={setClickLeftMenu} UnClickMenu={UnClickMenu}/>
-            <NewsInfo UnClickMenu={UnClickMenu}/>
+            <NewsMenu clickLeftMenu={clickLeftMenu} setClickLeftMenu={setClickLeftMenu} UnClickleftMenu={UnClickleftMenu}/>
+            <NewsInfo UnClickleftMenu={UnClickleftMenu}/>
         </div>
     )
 };
