@@ -49,22 +49,38 @@ const Home = (props: { dataWar: any
     const todayMouth = new Date().getMonth()+1;
     const todayYear = new Date().getFullYear(); 
 
-    const [toDay, setToDay] = useState(todayDate + '.' + todayMouth + '.' + todayYear);
+    const auditTodayDate = () => {
+      if(todayDate < 10){
+        return `0${new Date().getDate()}`;
+      }
+      else{
+        return new Date().getDate();
+      }
+    };
+
+    const auditTodayMouth = () => {
+      if(todayMouth < 10){
+        return `0${new Date().getMonth()+1}`;
+      }
+      else{
+        return new Date().getMonth()+1;
+      }
+    };
+
+    const [toDay, setToDay] = useState(auditTodayDate() + '.' + auditTodayMouth() + '.' + todayYear);
 
     const getStatistic = async() => {
         const response = await fetch(urlStatistic);
         const data = await response.json();
         setDataStatistic(data);
     };
-
+    
     useEffect(()=>{
         getStatistic();
     },[]);
 
     return(
         <div className='home'>
-          {/* <div className="home-header">
-          </div> */}
             <div className="home-statistic">
                 <h1>Втрати ворога на {toDay}</h1>
                 <div className="home-statistic-war">

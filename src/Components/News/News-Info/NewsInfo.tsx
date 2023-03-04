@@ -22,10 +22,10 @@ import Curiosities from './Curiosities/Curiosities';
 import Pogoda from './Pogoda/Pogoda';
 import NoPages from './NoPages/NoPages';
 
-const NewsInfo = (props: { UnClickMenu: any }) => {
+const NewsInfo = (props: { UnClickleftMenu: any }) => {
 
     const {
-        UnClickMenu
+        UnClickleftMenu
     } = props;
 
     const [dataWar, setDataWar] = useState([]);
@@ -165,7 +165,7 @@ const NewsInfo = (props: { UnClickMenu: any }) => {
     },[]);
 
     return(
-        <div className="news-info" onClick={UnClickMenu}>
+        <div className="news-info" onClick={UnClickleftMenu}>
             <Routes>
                 <Route path='/' element={<Home 
                         dataWar={dataWar}
